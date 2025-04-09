@@ -1,0 +1,574 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    color: #ff0000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+    color: #ff4500;
+    animation: glow 2s infinite alternate, float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+header p {
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+
+
+nav {
+    background: #ff0000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    padding: 0 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ff4500;
+}
+
+.hero h2 span {
+    color: #fff;
+}
+
+.hero h2 .ampersand {
+    color: #ff4500;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff0000;
+    color: #fff;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #000;
+    border-color: #000;
+    color: #ff4500;
+}
+
+/* Main Content */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.section:nth-child(even) {
+    background: #121212;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ff4500;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #ff4500;
+    margin: 10px auto;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* Cards for steps */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card {
+    width: 23%;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(255, 69, 0, 0.2);
+    border: 1px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+.card h4 {
+    font-size: 1.3rem;
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #bbb;
+    margin: 0;
+}
+
+/* Featured Vehicles Section */
+.featured {
+    background-color: #121212;
+    padding: 60px 10%;
+}
+
+.vehicle-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.vehicle-card {
+    width: 32%;
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(255, 69, 0, 0.2);
+    border: 1px solid #333;
+}
+
+.vehicle-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.vehicle-details {
+    padding: 20px;
+}
+
+.vehicle-title {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.vehicle-desc {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.vehicle-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    background: #000;
+    color: #ff4500;
+}
+
+.view-all {
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    padding: 12px 0;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.view-all:hover {
+    background: #000;
+    color: #ff4500;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 10%;
+    background: #1a1a1a;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.service-card {
+    width: 32%;
+    background: #121212;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(255, 69, 0, 0.2);
+    border: 1px solid #333;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+
+.service-desc {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #121212;
+}
+
+.founder-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.founder-card {
+    width: 300px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(255, 69, 0, 0.2);
+    border: 1px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #ff4500;
+    object-fit: cover;
+}
+
+.founder-name {
+    font-size: 1.5rem;
+    color: #ff4500;
+    margin-bottom: 5px;
+}
+
+.founder-role {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    color: #ff4500;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ff0000;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #bbb;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-social h4, .footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ff4500;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff4500;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff4500;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.5);
+    z-index: 1000;
+    border: 1px solid #ff4500;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal h3 {
+    margin-bottom: 15px;
+    color: #ff4500;
+    text-align: center;
+}
+
+.modal form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #121212;
+    color: #fff;
+}
+
+.modal form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff0000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.modal form button:hover {
+    background: #000;
+    color: #ff4500;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.modal-close:hover {
+    color: #ff4500;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .card, .vehicle-card, .service-card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+    .founder-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card, .vehicle-card, .service-card {
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}

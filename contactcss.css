@@ -1,0 +1,280 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    color: #ff0000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+    color: #ff4500;
+    animation: glow 2s infinite alternate, float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+header p {
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+nav {
+    background: #ff0000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #121212;
+    color: #fff;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #ff0000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #cc0000;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #000;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+footer p a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Add these styles to your existing contactcss.css */
+
+.contact-section, .location-section {
+    margin: 20px 0;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    border-top: 1px solid #333;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-description {
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #121212;
+    color: #fff;
+}
+
+.captcha {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.map-link {
+    color: #ff0000;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.map-link:hover {
+    color: #cc0000;
+}
+
+/* Add these styles to your existing contactcss.css */
+
+/* Icon styles */
+.icon {
+    margin-right: 10px;
+    color: #ff0000;
+    font-size: 1.2em;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Form input with icons */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-icon .icon {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+}
+
+.input-with-icon input,
+.input-with-icon textarea {
+    padding-left: 35px;
+    width: 100%;
+}
+
+.input-with-icon .textarea-icon {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+/* Button with icon */
+button i {
+    margin-right: 8px;
+}
+
+/* Location icons */
+.location-section .icon {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .icon-text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .icon {
+        margin-bottom: 5px;
+    }
+}

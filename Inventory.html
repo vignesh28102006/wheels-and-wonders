@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels & Wonders | Inventory</title>
+    <link rel="stylesheet" href="inventorycss.css">
+</head>
+<body>
+    <header>
+        <h1>Wheels & Wonders</h1>
+        <p>Your Royal Destination for Premium Cars and Bikes</p>
+    </header>
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="services.html">Services</a>
+        <a href="whyus.html">Why Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html" id="login-link">Login</a>
+    </nav>
+    <div class="content">
+        <h3>Our Inventory</h3>
+        <div class="container">
+            <div class="vehicle-section">
+                <h2>Cars</h2>
+                <div class="vehicle-grid">
+                    <!-- BMW 7 Series -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car1')">
+                        <img src="bmw-7-series.jpg.jpeg" alt="BMW 7 Series">
+                        <h3>BMW 7 Series</h3>
+                        <p>A luxury sedan with top-tier features and performance.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car1', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Audi Q7 -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car2')">
+                        <img src="audi-q7.jpg" alt="Audi Q7">
+                        <h3>Audi Q7</h3>
+                        <p>A premium SUV with elegant design and advanced technology.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car2', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Mercedes-Benz S-Class -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car3')">
+                        <img src="mercedes-benz-s-class.jpg" alt="Mercedes-Benz S-Class">
+                        <h3>Mercedes-Benz S-Class</h3>
+                        <p>A flagship luxury sedan offering unmatched comfort and performance.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car3', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Porsche 911 -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car4')">
+                        <img src="porsche-911.jpg" alt="Porsche 911">
+                        <h3>Porsche 911</h3>
+                        <p>An iconic sports car known for its performance and sleek design.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car4', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Lexus RX 500h -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car5')">
+                        <img src="lexus-rx-500h.jpg" alt="Lexus RX 500h">
+                        <h3>Lexus RX 500h</h3>
+                        <p>A hybrid luxury SUV with cutting-edge technology and comfort.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car5', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Jaguar F-Pace -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car6')">
+                        <img src="jaguar-f-pace.jpg" alt="Jaguar F-Pace">
+                        <h3>Jaguar F-Pace</h3>
+                        <p>A luxury SUV that combines performance with sophisticated design.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car6', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Range Rover Velar -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car7')">
+                        <img src="range-rover-velar.jpg" alt="Range Rover Velar">
+                        <h3>Range Rover Velar</h3>
+                        <p>A stylish and luxurious SUV with excellent off-road capabilities.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car7', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Tesla Model S -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car8')">
+                        <img src="tesla-model-s.jpeg" alt="Tesla Model S">
+                        <h3>Tesla Model S</h3>
+                        <p>A high-performance electric sedan with futuristic features.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car8', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Maserati Ghibli -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car9')">
+                        <img src="maserati-ghibli.jpeg" alt="Maserati Ghibli">
+                        <h3>Maserati Ghibli</h3>
+                        <p>A luxurious sports sedan offering a blend of elegance and power.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car9', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Bentley Continental GT -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('car10')">
+                        <img src="bentley-continental-gt.jpg" alt="Bentley Continental GT">
+                        <h3>Bentley Continental GT</h3>
+                        <p>A high-performance luxury coupe with a refined design and elite status.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('car10', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle-section">
+                <h2>Bikes</h2>
+                <div class="vehicle-grid">
+                    <!-- Harley-Davidson Road King -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('bike1')">
+                        <img src="harley-davidson-rk.jpeg" alt="Harley-Davidson Road King">
+                        <h3>Harley-Davidson Road King</h3>
+                        <p>A classic cruiser motorcycle with a strong presence and power.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('bike1', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Kawasaki Ninja H2 -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('bike2')">
+                        <img src="ninja-h2r.jpeg" alt="Kawasaki Ninja H2">
+                        <h3>Kawasaki Ninja H2</h3>
+                        <p>A supercharged sports bike known for its extreme performance.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('bike2', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Ducati Panigale V4 -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('bike3')">
+                        <img src="ducati-panigalev4.jpeg" alt="Ducati Panigale V4">
+                        <h3>Ducati Panigale V4</h3>
+                        <p>A high-performance sports bike with Italian design and engineering.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('bike3', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- BMW R 1250 GS -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('bike4')">
+                        <img src="bmw-r-1250.jpeg" alt="BMW R 1250 GS">
+                        <h3>BMW R 1250 GS</h3>
+                        <p>A top-tier adventure touring bike with great off-road capabilities.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('bike4', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Royal Enfield Interceptor 650 -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('bike5')">
+                        <img src="interseptor.jpeg" alt="Royal Enfield Interceptor 650">
+                        <h3>Royal Enfield Interceptor 650</h3>
+                        <p>A popular retro-style bike in India known for its performance and classic look.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('bike5', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Triumph Bonneville T120 -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('bike6')">
+                        <img src="triumph-t120.jpeg" alt="Triumph Bonneville T120">
+                        <h3>Triumph Bonneville T120</h3>
+                        <p>A classic British motorcycle with modern performance and style.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('bike6', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+
+                    <!-- Suzuki Hayabusa -->
+                    <div class="vehicle-card" onclick="showVehicleDetails('bike7')">
+                        <img src="hyabusa.jpeg" alt="Suzuki Hayabusa">
+                        <h3>Suzuki Hayabusa</h3>
+                        <p>A legendary superbike known for its speed and aerodynamic design.</p>
+                        <button class="quick-compare" onclick="event.stopPropagation(); addToCompare('bike7', event)">
+                            <i class="fas fa-balance-scale"></i> Compare
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- BMW 7 Series Details -->
+    <div id="car1-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car1')">&times;</span>
+            <div class="modal-header">
+                <h2>BMW 7 Series</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car1', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Ascend to the Fifth Dimension _ Introducing the BMW 5 Series Long Wheelbase. (1).mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">3.0L I6 TwinPower Turbo</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">335 hp @ 5,500 rpm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">5.1 seconds</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">5,120 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">3,070 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Cargo:</span>
+                                <span class="spec-value">515 liters</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">8-Speed Steptronic</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">RWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">12.3" Touchscreen</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$90,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000" title="Black Sapphire"></span>
+                            <span class="color-dot" style="background:#fff;border:1px solid #ccc" title="Mineral White"></span>
+                            <span class="color-dot" style="background:#1a1a1a" title="Carbon Black"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car1')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audi Q7 Details -->
+    <div id="car2-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car2')">&times;</span>
+            <div class="modal-header">
+                <h2>Audi Q7</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car2', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Audi q7.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">3.0L V6 Turbo</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">335 hp @ 5,300 rpm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">5.9 seconds</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">5,063 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">2,994 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Cargo:</span>
+                                <span class="spec-value">865 L (seats folded)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">8-Speed Tiptronic</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">Quattro AWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">10.1" MMI Touch</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$60,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#ffffff" title="Glacier White"></span>
+                            <span class="color-dot" style="background:#808080" title="Daytona Gray"></span>
+                            <span class="color-dot" style="background:#000080" title="Navarra Blue"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car2')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mercedes-Benz S-Class Details -->
+    <div id="car3-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car3')">&times;</span>
+            <div class="modal-header">
+                <h2>Mercedes-Benz S-Class</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car3', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="mercedes video.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">3.0L I6 Turbo Hybrid</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">435 hp @ 6,100 rpm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">4.9 seconds</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">5,179 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">3,106 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Cargo:</span>
+                                <span class="spec-value">550 liters</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">9G-Tronic Automatic</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">4MATIC AWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">12.8" OLED Display</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$110,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000000" title="Onyx Black"></span>
+                            <span class="color-dot" style="background:#c0c0c0" title="Iridium Silver"></span>
+                            <span class="color-dot" style="background:#708090" title="Selenite Grey"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car3')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Porsche 911 Details -->
+    <div id="car4-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car4')">&times;</span>
+            <div class="modal-header">
+                <h2>Porsche 911 Carrera S</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car4', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="A drive like no other – the Porsche 911 GT3.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">3.0L Twin-Turbo Flat-6</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">443 hp @ 6,500 rpm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">3.5 sec (with Sport Chrono)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">4,519 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">1,852 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">1,505 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">8-Speed PDK</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">Rear-Wheel Drive</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Top Speed:</span>
+                                <span class="spec-value">308 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$120,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#FF0000" title="Guards Red"></span>
+                            <span class="color-dot" style="background:#FFFFFF" title="Carrara White"></span>
+                            <span class="color-dot" style="background:#000000" title="Jet Black Metallic"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car4')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lexus RX 500h Details -->
+    <div id="car5-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car5')">&times;</span>
+            <div class="modal-header">
+                <h2>Lexus RX 500h F Sport</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car5', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Introducing the RX ｜ Lexus.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">2.4L Turbo Hybrid</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">366 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">EV Range:</span>
+                                <span class="spec-value">58 km</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">4,890 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">1,920 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">1,695 mm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed Automatic</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">E-Four AWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">14" Touchscreen</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$65,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000000" title="Sonic Chrome"></span>
+                            <span class="color-dot" style="background:#2F4F4F" title="Matte Black"></span>
+                            <span class="color-dot" style="background:#006400" title="Deep Green Mica"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car5')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jaguar F-Pace Details -->
+    <div id="car6-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car6')">&times;</span>
+            <div class="modal-header">
+                <h2>Jaguar F-Pace SVR</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car6', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Jaguar F-PACE.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">5.0L Supercharged V8</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">542 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">4.0 sec</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">4,737 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">2,071 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">1,667 mm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">8-Speed Automatic</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">AWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">11.4" Touchscreen</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$55,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#8B0000" title="Firenze Red"></span>
+                            <span class="color-dot" style="background:#000000" title="Santorini Black"></span>
+                            <span class="color-dot" style="background:#708090" title="Eiger Grey"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car6')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Range Rover Velar Details -->
+    <div id="car7-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car7')">&times;</span>
+            <div class="modal-header">
+                <h2>Range Rover Velar SVAutobiography</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car7', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="v.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">5.0L Supercharged V8</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">542 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">4.5 sec</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">4,797 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">2,145 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">1,665 mm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">8-Speed Automatic</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">AWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">Touch Pro Duo System</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$60,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#708090" title="Carpathian Grey"></span>
+                            <span class="color-dot" style="background:#CD7F32" title="Lantau Bronze"></span>
+                            <span class="color-dot" style="background:#000080" title="Byron Blue"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car7')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tesla Model S Details -->
+    <div id="car8-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car8')">&times;</span>
+            <div class="modal-header">
+                <h2>Tesla Model S Plaid</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car8', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Revolutionize Your Commute.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-bolt"></i> Battery & Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Battery:</span>
+                                <span class="spec-value">100 kWh</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Range:</span>
+                                <span class="spec-value">637 km (EPA)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">2.1 sec</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">4,980 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">1,964 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">1,445 mm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">AWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Top Speed:</span>
+                                <span class="spec-value">322 km/h</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">17" Touchscreen</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$90,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000000" title="Solid Black"></span>
+                            <span class="color-dot" style="background:#FFFFFF" title="Pearl White"></span>
+                            <span class="color-dot" style="background:#FF0000" title="Ultra Red"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car8')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maserati Ghibli Details -->
+    <div id="car9-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car9')">&times;</span>
+            <div class="modal-header">
+                <h2>Maserati Ghibli Trofeo</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car9', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Maserati Ghibli Trofeo. The Art of Fast.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">3.0L Twin-Turbo V6</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">572 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">4.3 sec</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">4,971 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">1,945 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">1,461 mm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">8-Speed Automatic</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">RWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">10.1" Touchscreen</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$78,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#FFFFFF" title="Blu Emozione"></span>
+                            <span class="color-dot" style="background:#808080" title="Grigio Lava"></span>
+                            <span class="color-dot" style="background:#800000" title="Rosso Magma"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car9')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bentley Continental GT Details -->
+    <div id="car10-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('car10')">&times;</span>
+            <div class="modal-header">
+                <h2>Bentley Continental GT Speed</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('car10', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="New Bentley Continental GT.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-tachometer-alt"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">6.0L Twin-Turbo W12</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">650 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">0-100 km/h:</span>
+                                <span class="spec-value">3.6 sec</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">4,850 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Width:</span>
+                                <span class="spec-value">2,187 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Height:</span>
+                                <span class="spec-value">1,405 mm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">8-Speed Dual Clutch</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Drivetrain:</span>
+                                <span class="spec-value">AWD</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Infotainment:</span>
+                                <span class="spec-value">12.3" Rotating Display</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$220,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000000" title="Onyx"></span>
+                            <span class="color-dot" style="background:#800000" title="Dragon Red II"></span>
+                            <span class="color-dot" style="background:#C0C0C0" title="Silver Tempest"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('car10')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Drive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Harley-Davidson Road King Details -->
+    <div id="bike1-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('bike1')">&times;</span>
+            <div class="modal-header">
+                <h2>Harley-Davidson Road King</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('bike1', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="2023 Electra Glide Highway King _ Harley-Davidson Icons Motorcycle Collection.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-motorcycle"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">1,745cc V-Twin</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">85 hp @ 5,020 rpm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">155 Nm @ 3,000 rpm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">2,440 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">1,625 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">365 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed CruiseDrive</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Fuel Capacity:</span>
+                                <span class="spec-value">22.7 L</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Top Speed:</span>
+                                <span class="spec-value">180 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$20,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000000" title="Vivid Black"></span>
+                            <span class="color-dot" style="background:#808080" title="River Rock Gray"></span>
+                            <span class="color-dot" style="background:#800000" title="Billiard Red"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('bike1')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Ride
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kawasaki Ninja H2 Details -->
+    <div id="bike2-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('bike2')">&times;</span>
+            <div class="modal-header">
+                <h2>Kawasaki Ninja H2</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('bike2', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="2015 Ninja H2R Promotion Video.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-motorcycle"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">998cc Supercharged Inline-4</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">228 hp @ 11,500 rpm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">141 Nm @ 11,000 rpm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">2,085 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">1,455 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">238 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed Quick Shifter</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Fuel Capacity:</span>
+                                <span class="spec-value">17 L</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Top Speed:</span>
+                                <span class="spec-value">340 km/h (limited)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$30,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000000" title="Metallic Matte Black"></span>
+                            <span class="color-dot" style="background:#006400" title="Metallic Matte Dark Green"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('bike2')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Ride
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ducati Panigale V4 Details -->
+    <div id="bike3-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('bike3')">&times;</span>
+            <div class="modal-header">
+                <h2>Ducati Panigale V4</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('bike3', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="New Ducati Panigale V4 2025 _ Wonder. Engineered..mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-motorcycle"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">1,103cc V4</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">214 hp @ 13,000 rpm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">124 Nm @ 9,500 rpm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">2,070 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">1,469 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">198 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed Quick Shifter</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Top Speed:</span>
+                                <span class="spec-value">299 km/h</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Electronics:</span>
+                                <span class="spec-value">6-Axis IMU, Cornering ABS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$28,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#FF0000" title="Ducati Red"></span>
+                            <span class="color-dot" style="background:#000000" title="Dark Stealth"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('bike3')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Ride
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BMW R 1250 GS Details -->
+    <div id="bike4-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('bike4')">&times;</span>
+            <div class="modal-header">
+                <h2>BMW R 1250 GS</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('bike4', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="The new BMW R 1250 GS Adventure.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-motorcycle"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">1,254cc Boxer Twin</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">136 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">143 Nm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">2,207 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">1,525 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">249 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Fuel Capacity:</span>
+                                <span class="spec-value">20 L</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Electronics:</span>
+                                <span class="spec-value">Dynamic ESA, Hill Start Control</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$18,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#006400" title="Rallye"></span>
+                            <span class="color-dot" style="background:#000000" title="Triple Black"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('bike4')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Ride
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Royal Enfield Interceptor 650 Details -->
+    <div id="bike5-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('bike5')">&times;</span>
+            <div class="modal-header">
+                <h2>Royal Enfield Interceptor 650</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('bike5', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Royal Enfield Interceptor 650 Twin 2021 _ Easy Got Back.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-motorcycle"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">648cc Parallel Twin</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">47 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">52 Nm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">2,140 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">1,400 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">202 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Fuel Capacity:</span>
+                                <span class="spec-value">13.7 L</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Style:</span>
+                                <span class="spec-value">Retro Classic</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$6,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#FFA500" title="Orange Crush"></span>
+                            <span class="color-dot" style="background:#800000" title="Baker Express"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('bike5')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Ride
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Triumph Bonneville T120 Details -->
+    <div id="bike6-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('bike6')">&times;</span>
+            <div class="modal-header">
+                <h2>Triumph Bonneville T120</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('bike6', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="Introducing the ALL-NEW Triumph Bonneville T120 Black Stealth Edition.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-motorcycle"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">1,200cc Parallel Twin</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">79 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">105 Nm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">2,250 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">1,450 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">236 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Fuel Capacity:</span>
+                                <span class="spec-value">14.5 L</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Style:</span>
+                                <span class="spec-value">Classic British</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$13,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#000000" title="Jet Black"></span>
+                            <span class="color-dot" style="background:#800000" title="Cranberry Red"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('bike6')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Ride
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suzuki Hayabusa Details -->
+    <div id="bike7-details" class="vehicle-details-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails('bike7')">&times;</span>
+            <div class="modal-header">
+                <h2>Suzuki Hayabusa</h2>
+                <button class="modal-compare-btn" onclick="addToCompare('bike7', event)">
+                    <i class="fas fa-balance-scale"></i> Add to Comparison
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="vehicle-image">
+                    <video src="New Hayabusa 2021 Is All Set To Launch!! Official Trailer.mp4" controls autoplay muted></video>
+                </div>
+                <div class="vehicle-specs">
+                    <div class="specs-grid">
+                        <div class="spec-group">
+                            <h4><i class="fas fa-motorcycle"></i> Performance</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Engine:</span>
+                                <span class="spec-value">1,340cc Inline-4</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Power:</span>
+                                <span class="spec-value">187 hp</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">150 Nm</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-ruler-combined"></i> Dimensions</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Length:</span>
+                                <span class="spec-value">2,180 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Wheelbase:</span>
+                                <span class="spec-value">1,480 mm</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Weight:</span>
+                                <span class="spec-value">264 kg</span>
+                            </div>
+                        </div>
+                        
+                        <div class="spec-group">
+                            <h4><i class="fas fa-cogs"></i> Features</h4>
+                            <div class="spec-row">
+                                <span class="spec-label">Transmission:</span>
+                                <span class="spec-value">6-Speed</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Top Speed:</span>
+                                <span class="spec-value">299 km/h (limited)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Electronics:</span>
+                                <span class="spec-value">S-DMS Ride Modes, Brembo Brakes</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-tag">
+                            <span class="price-label">Starting at:</span>
+                            <span class="price-value">$16,000</span>
+                        </div>
+                        <div class="color-options">
+                            <span class="color-label">Available Colors:</span>
+                            <span class="color-dot" style="background:#FFFFFF" title="Pearl Brilliant White"></span>
+                            <span class="color-dot" style="background:#000000" title="Metallic Matte Black"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="test-drive-section">
+                        <button class="test-drive-btn" onclick="scheduleTestDrive('bike7')">
+                            <i class="fas fa-calendar-alt"></i> Schedule Test Ride
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Comparison Modal -->
+    <div id="comparison-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeComparisonModal()">&times;</span>
+            <div id="comparison-results"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Wheels & Wonders. All Rights Reserved. <a href="homepage.html">Back to top</a></p>
+    </footer>
+
+    <script src="ex1.js"></script>
+</body>
+</html>

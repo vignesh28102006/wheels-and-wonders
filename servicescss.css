@@ -1,0 +1,360 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    color: #ff0000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+    color: #ff4500;
+    animation: glow 2s infinite alternate, float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+header p {
+    font-size: 1.2em;
+    color: #bbb;
+}
+
+nav {
+    background: #ff0000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    padding: 5px 0;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+/* Hero Section */
+.services-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff4500;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Content Styles */
+.content {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-intro h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+.services-intro p {
+    font-size: 1.2em;
+    color: #bbb;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: 4px solid #ff4500;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+}
+
+.service-icon {
+    font-size: 2.5em;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.service-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.service-card ul li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #bbb;
+}
+
+.service-card ul li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff4500;
+    position: absolute;
+    left: 0;
+}
+
+.service-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.service-btn:hover {
+    background: #cc3700;
+}
+
+/* Service Process */
+.service-process {
+    margin-bottom: 60px;
+}
+
+.service-process h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #ff4500;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    position: relative;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #ff4500;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.step h5 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.step p {
+    color: #bbb;
+}
+
+/* CTA Section */
+.service-cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.service-cta h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+.service-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.cta-btn.primary {
+    background: #ff4500;
+    color: #fff;
+}
+
+.cta-btn.primary:hover {
+    background: #cc3700;
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    color: #ff4500;
+    border: 2px solid #ff4500;
+}
+
+.cta-btn.secondary:hover {
+    background: #ff4500;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+footer p a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    .hero-content h2 {
+        font-size: 2em;
+    }
+    
+    .hero-content p {
+        font-size: 1.2em;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+}
